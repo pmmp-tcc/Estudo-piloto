@@ -69,7 +69,7 @@ def honeypot(a=0, b=9, m=0, n=len(keys)):
                 ids.append(tweet.id)
             retweet = random.choice(ids)
             try:
-                print(api.retweet(retweet)) #retweetava
+                print(api.retweet(retweet)) #retweetar
                 print(api.create_favorite(retweet))
 
             except tweepy.errors.Forbidden:
